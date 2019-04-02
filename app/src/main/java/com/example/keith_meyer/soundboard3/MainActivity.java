@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         n5 = findViewById(R.id.noise5);
         n6 = findViewById(R.id.noise6);
         n7 = findViewById(R.id.noise7);
+        n8 = findViewById(R.id.noise8);
+        n9 = findViewById(R.id.noise9);
 
 
 
@@ -86,6 +88,20 @@ public class MainActivity extends AppCompatActivity {
             }
         }); //commit test
 
+        n8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                elephant();
+            }
+        });
+
+        n9.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                cat();
+            }
+        });
+
 
 
 
@@ -117,6 +133,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void clown(){
         mp = MediaPlayer.create(this, R.raw.clown);
+        mp.start();
+    }
+
+    public void cat(){
+        mp = MediaPlayer.create(this, R.raw.cat);
+        mp.start();
+    }
+
+    public void elephant(){
+        mp = MediaPlayer.create(this, R.raw.elephant);
         mp.start();
     }
 
