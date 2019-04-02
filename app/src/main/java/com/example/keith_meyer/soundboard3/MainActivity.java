@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         n4 = findViewById(R.id.noise4);
         n5 = findViewById(R.id.noise5);
         n6 = findViewById(R.id.noise6);
+        n7 = findViewById(R.id.noise7);
 
 
 
@@ -78,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        n7.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                clown();
+            }
+        });
+
 
 
 
@@ -106,6 +114,12 @@ public class MainActivity extends AppCompatActivity {
         mp = MediaPlayer.create(this, R.raw.submarine);
         mp.start();
     }
+
+    public void clown(){
+        mp = MediaPlayer.create(this, R.raw.clown);
+        mp.start();
+    }
+
     public void makeItStop(){
         mp.pause();
     }

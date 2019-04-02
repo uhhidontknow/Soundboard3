@@ -45,5 +45,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_alignTop="@+id/noise4"
             android:layout_alignStart="@+id/noise3" android:id="@+id/noise6"/>
+    <Button
+            android:text="Clown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginTop="133dp"
+            android:layout_alignStart="@+id/noise1" android:id="@+id/noise7"/>
+    <Button
+            android:text="Button"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content" android:layout_alignTop="@+id/noise7"
+            android:layout_alignStart="@+id/noise2" android:id="@+id/noise8"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/noise9" android:layout_alignTop="@+id/noise7" android:layout_alignStart="@+id/noise3"/>
 
 </RelativeLayout>
