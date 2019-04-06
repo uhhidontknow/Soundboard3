@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private View bg;
-    private Button n1, n2, n3, n4, n5, n6, n7, n8, n9;
+    private Button n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12;
 
     private EditText inText;
     private TextView outText;
@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         n7 = findViewById(R.id.noise7);
         n8 = findViewById(R.id.noise8);
         n9 = findViewById(R.id.noise9);
+        n10 = findViewById(R.id.noise10);
+        n11 = findViewById(R.id.noise11);
+        n12 = findViewById(R.id.noise12);
+
 
 
 
@@ -102,6 +106,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        n10.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                bruh();
+            }
+        });
+
+        n11.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                sadviolin();
+            }
+        });
+
+        n12.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                halo();
+            }
+        });
 
 
 
@@ -145,6 +169,22 @@ public class MainActivity extends AppCompatActivity {
         mp = MediaPlayer.create(this, R.raw.elephant);
         mp.start();
     }
+
+    public void bruh(){
+        mp = MediaPlayer.create(this, R.raw.bruh);
+        mp.start();
+    }
+
+    public void sadviolin(){
+        mp = MediaPlayer.create(this, R.raw.sadviolin);
+        mp.start();
+    }
+
+    public void halo(){
+        mp = MediaPlayer.create(this, R.raw.halo);
+        mp.start();
+    }
+
 
     public void makeItStop(){
         mp.pause();
